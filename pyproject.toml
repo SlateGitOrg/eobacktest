@@ -1,0 +1,41 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "eobacktest"
+version = "0.1.0"
+description = "Excess and obsolete inventory reserves under four policies, replayed point-in-time and backtested against realized unsold stock."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "eobacktest contributors" }]
+dependencies = [
+    "duckdb>=1.1",
+    "numpy>=1.26",
+    "typer>=0.12",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8",
+    "ruff>=0.6",
+    "pyyaml>=6",
+]
+
+[project.scripts]
+eobacktest = "eobacktest.cli:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/eobacktest"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["error"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]

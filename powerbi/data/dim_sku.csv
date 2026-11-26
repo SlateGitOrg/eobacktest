@@ -1,0 +1,401 @@
+sku_key,sku_id,name,phone_model,category,kind,unit_cost,cohort
+1,SKU-0001,Gift pack for P-01 (01),P-01,gift pack,gift_pack,26.36,Seasonal gift pack
+2,SKU-0002,Gift pack for P-01 (02),P-01,gift pack,gift_pack,15.6,Seasonal gift pack
+3,SKU-0003,Gift pack for P-01 (03),P-01,gift pack,gift_pack,25.98,Seasonal gift pack
+4,SKU-0004,Gift pack for P-01 (04),P-01,gift pack,gift_pack,25.14,Seasonal gift pack
+5,SKU-0005,Cable for P-01 (05),P-01,cable,standard,4.14,Dormant stock
+6,SKU-0006,Charger for P-01 (06),P-01,charger,standard,12.43,Dormant stock
+7,SKU-0007,Case for P-01 (07),P-01,case,standard,3.64,Dormant stock
+8,SKU-0008,Screen Protector for P-01 (08),P-01,screen protector,standard,2.88,Dormant stock
+9,SKU-0009,Case for P-01 (09),P-01,case,standard,3.77,Dormant stock
+10,SKU-0010,Cable for P-01 (10),P-01,cable,standard,3.04,Core
+11,SKU-0011,Charger for P-01 (11),P-01,charger,standard,14.78,Core
+12,SKU-0012,Case for P-01 (12),P-01,case,standard,5.16,Core
+13,SKU-0013,Screen Protector for P-01 (13),P-01,screen protector,standard,2.4,Core
+14,SKU-0014,Screen Protector for P-01 (14),P-01,screen protector,standard,1.73,Core
+15,SKU-0015,Car Mount for P-01 (15),P-01,car mount,standard,9.54,Core
+16,SKU-0016,Charger for P-01 (16),P-01,charger,standard,9.21,Core
+17,SKU-0017,Screen Protector for P-01 (17),P-01,screen protector,standard,1.65,Core
+18,SKU-0018,Charger for P-01 (18),P-01,charger,standard,10.4,Core
+19,SKU-0019,Case for P-01 (19),P-01,case,standard,6.38,Core
+20,SKU-0020,Charger for P-01 (20),P-01,charger,standard,9.16,Core
+21,SKU-0021,Charger for P-01 (21),P-01,charger,standard,9.44,Core
+22,SKU-0022,Charger for P-01 (22),P-01,charger,standard,11.01,Core
+23,SKU-0023,Case for P-01 (23),P-01,case,standard,6.5,Core
+24,SKU-0024,Screen Protector for P-01 (24),P-01,screen protector,standard,2.63,Core
+25,SKU-0025,Case for P-01 (25),P-01,case,standard,3.49,Core
+26,SKU-0026,Screen Protector for P-01 (26),P-01,screen protector,standard,2.29,Core
+27,SKU-0027,Charger for P-01 (27),P-01,charger,standard,13.47,Core
+28,SKU-0028,Cable for P-01 (28),P-01,cable,standard,5.68,Core
+29,SKU-0029,Case for P-01 (29),P-01,case,standard,6.01,Core
+30,SKU-0030,Screen Protector for P-01 (30),P-01,screen protector,standard,2.72,Core
+31,SKU-0031,Cable for P-01 (31),P-01,cable,standard,4.3,Core
+32,SKU-0032,Case for P-01 (32),P-01,case,standard,4.45,Core
+33,SKU-0033,Car Mount for P-01 (33),P-01,car mount,standard,9.44,Core
+34,SKU-0034,Car Mount for P-01 (34),P-01,car mount,standard,8.67,Core
+35,SKU-0035,Gift pack for P-02 (01),P-02,gift pack,gift_pack,26.34,Seasonal gift pack
+36,SKU-0036,Gift pack for P-02 (02),P-02,gift pack,gift_pack,21.29,Seasonal gift pack
+37,SKU-0037,Gift pack for P-02 (03),P-02,gift pack,gift_pack,26.05,Seasonal gift pack
+38,SKU-0038,Gift pack for P-02 (04),P-02,gift pack,gift_pack,26.76,Seasonal gift pack
+39,SKU-0039,Case for P-02 (05),P-02,case,standard,4.72,Dormant stock
+40,SKU-0040,Charger for P-02 (06),P-02,charger,standard,13.74,Dormant stock
+41,SKU-0041,Case for P-02 (07),P-02,case,standard,3.85,Dormant stock
+42,SKU-0042,Screen Protector for P-02 (08),P-02,screen protector,standard,2.39,Dormant stock
+43,SKU-0043,Charger for P-02 (09),P-02,charger,standard,13.08,Dormant stock
+44,SKU-0044,Cable for P-02 (10),P-02,cable,standard,5.05,Core
+45,SKU-0045,Cable for P-02 (11),P-02,cable,standard,5.57,Core
+46,SKU-0046,Case for P-02 (12),P-02,case,standard,3.12,Core
+47,SKU-0047,Case for P-02 (13),P-02,case,standard,3.75,Core
+48,SKU-0048,Charger for P-02 (14),P-02,charger,standard,9.33,Core
+49,SKU-0049,Screen Protector for P-02 (15),P-02,screen protector,standard,2.91,Core
+50,SKU-0050,Charger for P-02 (16),P-02,charger,standard,12.89,Core
+51,SKU-0051,Case for P-02 (17),P-02,case,standard,6.21,Core
+52,SKU-0052,Case for P-02 (18),P-02,case,standard,4.35,Core
+53,SKU-0053,Charger for P-02 (19),P-02,charger,standard,14.38,Core
+54,SKU-0054,Cable for P-02 (20),P-02,cable,standard,2.95,Core
+55,SKU-0055,Case for P-02 (21),P-02,case,standard,5.29,Core
+56,SKU-0056,Case for P-02 (22),P-02,case,standard,5.64,Core
+57,SKU-0057,Cable for P-02 (23),P-02,cable,standard,3.65,Core
+58,SKU-0058,Cable for P-02 (24),P-02,cable,standard,3.07,Core
+59,SKU-0059,Case for P-02 (25),P-02,case,standard,5.25,Core
+60,SKU-0060,Case for P-02 (26),P-02,case,standard,4.83,Core
+61,SKU-0061,Screen Protector for P-02 (27),P-02,screen protector,standard,1.7,Core
+62,SKU-0062,Screen Protector for P-02 (28),P-02,screen protector,standard,2.06,Core
+63,SKU-0063,Case for P-02 (29),P-02,case,standard,4.32,Core
+64,SKU-0064,Cable for P-02 (30),P-02,cable,standard,4.53,Core
+65,SKU-0065,Cable for P-02 (31),P-02,cable,standard,2.96,Core
+66,SKU-0066,Case for P-02 (32),P-02,case,standard,6.63,Core
+67,SKU-0067,Cable for P-02 (33),P-02,cable,standard,4.67,Core
+68,SKU-0068,Cable for P-02 (34),P-02,cable,standard,3.81,Core
+69,SKU-0069,Gift pack for P-03 (01),P-03,gift pack,gift_pack,24.42,Seasonal gift pack
+70,SKU-0070,Gift pack for P-03 (02),P-03,gift pack,gift_pack,22.79,Seasonal gift pack
+71,SKU-0071,Gift pack for P-03 (03),P-03,gift pack,gift_pack,13.03,Seasonal gift pack
+72,SKU-0072,Gift pack for P-03 (04),P-03,gift pack,gift_pack,24.12,Seasonal gift pack
+73,SKU-0073,Case for P-03 (05),P-03,case,standard,4.06,Dormant stock
+74,SKU-0074,Case for P-03 (06),P-03,case,standard,6.2,Dormant stock
+75,SKU-0075,Cable for P-03 (07),P-03,cable,standard,5.22,Dormant stock
+76,SKU-0076,Cable for P-03 (08),P-03,cable,standard,5.02,Dormant stock
+77,SKU-0077,Cable for P-03 (09),P-03,cable,standard,4.4,Dormant stock
+78,SKU-0078,Cable for P-03 (10),P-03,cable,standard,5.72,Core
+79,SKU-0079,Cable for P-03 (11),P-03,cable,standard,5.98,Core
+80,SKU-0080,Cable for P-03 (12),P-03,cable,standard,5.72,Core
+81,SKU-0081,Case for P-03 (13),P-03,case,standard,3.71,Core
+82,SKU-0082,Cable for P-03 (14),P-03,cable,standard,3.17,Core
+83,SKU-0083,Cable for P-03 (15),P-03,cable,standard,2.74,Core
+84,SKU-0084,Screen Protector for P-03 (16),P-03,screen protector,standard,1.97,Core
+85,SKU-0085,Case for P-03 (17),P-03,case,standard,6.98,Core
+86,SKU-0086,Case for P-03 (18),P-03,case,standard,4.58,Core
+87,SKU-0087,Case for P-03 (19),P-03,case,standard,5.01,Core
+88,SKU-0088,Cable for P-03 (20),P-03,cable,standard,4.19,Core
+89,SKU-0089,Case for P-03 (21),P-03,case,standard,5.11,Core
+90,SKU-0090,Charger for P-03 (22),P-03,charger,standard,12.29,Core
+91,SKU-0091,Cable for P-03 (23),P-03,cable,standard,3.13,Core
+92,SKU-0092,Car Mount for P-03 (24),P-03,car mount,standard,11.65,Core
+93,SKU-0093,Case for P-03 (25),P-03,case,standard,5.03,Core
+94,SKU-0094,Case for P-03 (26),P-03,case,standard,4.26,Core
+95,SKU-0095,Case for P-03 (27),P-03,case,standard,4.86,Core
+96,SKU-0096,Cable for P-03 (28),P-03,cable,standard,5.16,Core
+97,SKU-0097,Charger for P-03 (29),P-03,charger,standard,13.89,Core
+98,SKU-0098,Cable for P-03 (30),P-03,cable,standard,3.08,Core
+99,SKU-0099,Screen Protector for P-03 (31),P-03,screen protector,standard,2.9,Core
+100,SKU-0100,Case for P-03 (32),P-03,case,standard,6.86,Core
+101,SKU-0101,Case for P-03 (33),P-03,case,standard,6.21,Core
+102,SKU-0102,Car Mount for P-03 (34),P-03,car mount,standard,8.6,Core
+103,SKU-0103,Gift pack for P-04 (01),P-04,gift pack,gift_pack,17.36,Seasonal gift pack
+104,SKU-0104,Gift pack for P-04 (02),P-04,gift pack,gift_pack,15.34,Seasonal gift pack
+105,SKU-0105,Gift pack for P-04 (03),P-04,gift pack,gift_pack,24.31,Seasonal gift pack
+106,SKU-0106,Gift pack for P-04 (04),P-04,gift pack,gift_pack,23.65,Seasonal gift pack
+107,SKU-0107,Case for P-04 (05),P-04,case,standard,6.83,Core
+108,SKU-0108,Cable for P-04 (06),P-04,cable,standard,4.33,Core
+109,SKU-0109,Charger for P-04 (07),P-04,charger,standard,12.46,Core
+110,SKU-0110,Screen Protector for P-04 (08),P-04,screen protector,standard,2.45,Core
+111,SKU-0111,Charger for P-04 (09),P-04,charger,standard,9.78,Core
+112,SKU-0112,Case for P-04 (10),P-04,case,standard,4.82,Core
+113,SKU-0113,Charger for P-04 (11),P-04,charger,standard,14.46,Core
+114,SKU-0114,Cable for P-04 (12),P-04,cable,standard,4.87,Core
+115,SKU-0115,Charger for P-04 (13),P-04,charger,standard,11.17,Core
+116,SKU-0116,Screen Protector for P-04 (14),P-04,screen protector,standard,2.63,Core
+117,SKU-0117,Cable for P-04 (15),P-04,cable,standard,3.83,Core
+118,SKU-0118,Screen Protector for P-04 (16),P-04,screen protector,standard,2.57,Core
+119,SKU-0119,Charger for P-04 (17),P-04,charger,standard,12.46,Core
+120,SKU-0120,Charger for P-04 (18),P-04,charger,standard,11.37,Core
+121,SKU-0121,Case for P-04 (19),P-04,case,standard,4.72,Core
+122,SKU-0122,Screen Protector for P-04 (20),P-04,screen protector,standard,2.37,Core
+123,SKU-0123,Screen Protector for P-04 (21),P-04,screen protector,standard,1.9,Core
+124,SKU-0124,Charger for P-04 (22),P-04,charger,standard,8.59,Core
+125,SKU-0125,Screen Protector for P-04 (23),P-04,screen protector,standard,2.74,Core
+126,SKU-0126,Cable for P-04 (24),P-04,cable,standard,4.1,Core
+127,SKU-0127,Case for P-04 (25),P-04,case,standard,4.27,Core
+128,SKU-0128,Case for P-04 (26),P-04,case,standard,5.93,Core
+129,SKU-0129,Case for P-04 (27),P-04,case,standard,5.73,Core
+130,SKU-0130,Screen Protector for P-04 (28),P-04,screen protector,standard,2.46,Core
+131,SKU-0131,Charger for P-04 (29),P-04,charger,standard,13.05,Core
+132,SKU-0132,Case for P-04 (30),P-04,case,standard,4.22,Core
+133,SKU-0133,Screen Protector for P-04 (31),P-04,screen protector,standard,2.66,Core
+134,SKU-0134,Case for P-04 (32),P-04,case,standard,4.29,Core
+135,SKU-0135,Car Mount for P-04 (33),P-04,car mount,standard,9.94,Core
+136,SKU-0136,Cable for P-04 (34),P-04,cable,standard,3.7,Core
+137,SKU-0137,Gift pack for P-05 (01),P-05,gift pack,gift_pack,14.27,Seasonal gift pack
+138,SKU-0138,Gift pack for P-05 (02),P-05,gift pack,gift_pack,22.24,Seasonal gift pack
+139,SKU-0139,Gift pack for P-05 (03),P-05,gift pack,gift_pack,14.21,Seasonal gift pack
+140,SKU-0140,Gift pack for P-05 (04),P-05,gift pack,gift_pack,16.53,Seasonal gift pack
+141,SKU-0141,Car Mount for P-05 (05),P-05,car mount,standard,6.15,Core
+142,SKU-0142,Screen Protector for P-05 (06),P-05,screen protector,standard,1.52,Core
+143,SKU-0143,Cable for P-05 (07),P-05,cable,standard,3.14,Core
+144,SKU-0144,Screen Protector for P-05 (08),P-05,screen protector,standard,2.73,Core
+145,SKU-0145,Cable for P-05 (09),P-05,cable,standard,4.84,Core
+146,SKU-0146,Charger for P-05 (10),P-05,charger,standard,14.18,Core
+147,SKU-0147,Cable for P-05 (11),P-05,cable,standard,2.9,Core
+148,SKU-0148,Cable for P-05 (12),P-05,cable,standard,5.7,Core
+149,SKU-0149,Charger for P-05 (13),P-05,charger,standard,13.43,Core
+150,SKU-0150,Charger for P-05 (14),P-05,charger,standard,10.69,Core
+151,SKU-0151,Cable for P-05 (15),P-05,cable,standard,4.93,Core
+152,SKU-0152,Cable for P-05 (16),P-05,cable,standard,3.68,Core
+153,SKU-0153,Case for P-05 (17),P-05,case,standard,4.22,Core
+154,SKU-0154,Case for P-05 (18),P-05,case,standard,6.59,Core
+155,SKU-0155,Screen Protector for P-05 (19),P-05,screen protector,standard,1.5,Core
+156,SKU-0156,Case for P-05 (20),P-05,case,standard,6.2,Core
+157,SKU-0157,Case for P-05 (21),P-05,case,standard,6.76,Core
+158,SKU-0158,Case for P-05 (22),P-05,case,standard,6.26,Core
+159,SKU-0159,Case for P-05 (23),P-05,case,standard,5.2,Core
+160,SKU-0160,Case for P-05 (24),P-05,case,standard,6.06,Core
+161,SKU-0161,Charger for P-05 (25),P-05,charger,standard,11.64,Core
+162,SKU-0162,Cable for P-05 (26),P-05,cable,standard,4.72,Core
+163,SKU-0163,Cable for P-05 (27),P-05,cable,standard,4.94,Core
+164,SKU-0164,Car Mount for P-05 (28),P-05,car mount,standard,10.28,Core
+165,SKU-0165,Case for P-05 (29),P-05,case,standard,4.88,Core
+166,SKU-0166,Case for P-05 (30),P-05,case,standard,4.22,Core
+167,SKU-0167,Case for P-05 (31),P-05,case,standard,3.69,Core
+168,SKU-0168,Case for P-05 (32),P-05,case,standard,5.96,Core
+169,SKU-0169,Charger for P-05 (33),P-05,charger,standard,12.05,Core
+170,SKU-0170,Cable for P-05 (34),P-05,cable,standard,4.16,Core
+171,SKU-0171,Gift pack for P-06 (01),P-06,gift pack,gift_pack,25.84,Seasonal gift pack
+172,SKU-0172,Gift pack for P-06 (02),P-06,gift pack,gift_pack,12.09,Seasonal gift pack
+173,SKU-0173,Gift pack for P-06 (03),P-06,gift pack,gift_pack,17.9,Seasonal gift pack
+174,SKU-0174,Gift pack for P-06 (04),P-06,gift pack,gift_pack,13.17,Seasonal gift pack
+175,SKU-0175,Gift pack for P-06 (05),P-06,gift pack,gift_pack,25.0,Seasonal gift pack
+176,SKU-0176,Screen Protector for P-06 (06),P-06,screen protector,standard,2.18,Core
+177,SKU-0177,Case for P-06 (07),P-06,case,standard,4.57,Core
+178,SKU-0178,Charger for P-06 (08),P-06,charger,standard,15.63,Core
+179,SKU-0179,Screen Protector for P-06 (09),P-06,screen protector,standard,2.36,Core
+180,SKU-0180,Cable for P-06 (10),P-06,cable,standard,4.43,Core
+181,SKU-0181,Screen Protector for P-06 (11),P-06,screen protector,standard,1.75,Core
+182,SKU-0182,Case for P-06 (12),P-06,case,standard,5.18,Core
+183,SKU-0183,Case for P-06 (13),P-06,case,standard,4.49,Core
+184,SKU-0184,Charger for P-06 (14),P-06,charger,standard,8.86,Core
+185,SKU-0185,Case for P-06 (15),P-06,case,standard,4.0,Core
+186,SKU-0186,Car Mount for P-06 (16),P-06,car mount,standard,6.27,Core
+187,SKU-0187,Screen Protector for P-06 (17),P-06,screen protector,standard,2.88,Core
+188,SKU-0188,Screen Protector for P-06 (18),P-06,screen protector,standard,2.29,Core
+189,SKU-0189,Case for P-06 (19),P-06,case,standard,4.41,Core
+190,SKU-0190,Case for P-06 (20),P-06,case,standard,6.23,Core
+191,SKU-0191,Case for P-06 (21),P-06,case,standard,6.49,Core
+192,SKU-0192,Charger for P-06 (22),P-06,charger,standard,12.06,Core
+193,SKU-0193,Case for P-06 (23),P-06,case,standard,3.21,Core
+194,SKU-0194,Screen Protector for P-06 (24),P-06,screen protector,standard,2.03,Core
+195,SKU-0195,Case for P-06 (25),P-06,case,standard,4.32,Core
+196,SKU-0196,Screen Protector for P-06 (26),P-06,screen protector,standard,2.63,Core
+197,SKU-0197,Car Mount for P-06 (27),P-06,car mount,standard,7.86,Core
+198,SKU-0198,Case for P-06 (28),P-06,case,standard,4.75,Core
+199,SKU-0199,Case for P-06 (29),P-06,case,standard,5.85,Core
+200,SKU-0200,Car Mount for P-06 (30),P-06,car mount,standard,10.17,Core
+201,SKU-0201,Case for P-06 (31),P-06,case,standard,3.37,Core
+202,SKU-0202,Case for P-06 (32),P-06,case,standard,6.67,Core
+203,SKU-0203,Charger for P-06 (33),P-06,charger,standard,11.67,Core
+204,SKU-0204,Charger for P-06 (34),P-06,charger,standard,15.98,Core
+205,SKU-0205,Screen Protector for P-07 (01),P-07,screen protector,standard,2.67,P-07 end-of-life
+206,SKU-0206,Case for P-07 (02),P-07,case,standard,4.81,P-07 end-of-life
+207,SKU-0207,Screen Protector for P-07 (03),P-07,screen protector,standard,2.91,P-07 end-of-life
+208,SKU-0208,Cable for P-07 (04),P-07,cable,standard,4.15,P-07 end-of-life
+209,SKU-0209,Screen Protector for P-07 (05),P-07,screen protector,standard,1.71,P-07 end-of-life
+210,SKU-0210,Charger for P-07 (06),P-07,charger,standard,13.38,P-07 end-of-life
+211,SKU-0211,Case for P-07 (07),P-07,case,standard,4.11,P-07 end-of-life
+212,SKU-0212,Screen Protector for P-07 (08),P-07,screen protector,standard,1.98,P-07 end-of-life
+213,SKU-0213,Case for P-07 (09),P-07,case,standard,5.79,P-07 end-of-life
+214,SKU-0214,Charger for P-07 (10),P-07,charger,standard,8.27,P-07 end-of-life
+215,SKU-0215,Case for P-07 (11),P-07,case,standard,4.39,P-07 end-of-life
+216,SKU-0216,Case for P-07 (12),P-07,case,standard,5.83,P-07 end-of-life
+217,SKU-0217,Case for P-07 (13),P-07,case,standard,4.01,P-07 end-of-life
+218,SKU-0218,Case for P-07 (14),P-07,case,standard,5.42,P-07 end-of-life
+219,SKU-0219,Case for P-07 (15),P-07,case,standard,5.08,P-07 end-of-life
+220,SKU-0220,Screen Protector for P-07 (16),P-07,screen protector,standard,1.99,P-07 end-of-life
+221,SKU-0221,Charger for P-07 (17),P-07,charger,standard,8.61,P-07 end-of-life
+222,SKU-0222,Case for P-07 (18),P-07,case,standard,3.12,P-07 end-of-life
+223,SKU-0223,Case for P-07 (19),P-07,case,standard,5.83,P-07 end-of-life
+224,SKU-0224,Car Mount for P-07 (20),P-07,car mount,standard,11.39,P-07 end-of-life
+225,SKU-0225,Screen Protector for P-07 (21),P-07,screen protector,standard,1.54,P-07 end-of-life
+226,SKU-0226,Case for P-07 (22),P-07,case,standard,5.53,P-07 end-of-life
+227,SKU-0227,Car Mount for P-07 (23),P-07,car mount,standard,8.01,P-07 end-of-life
+228,SKU-0228,Cable for P-07 (24),P-07,cable,standard,4.87,P-07 end-of-life
+229,SKU-0229,Case for P-07 (25),P-07,case,standard,4.04,P-07 end-of-life
+230,SKU-0230,Cable for P-07 (26),P-07,cable,standard,4.74,P-07 end-of-life
+231,SKU-0231,Cable for P-07 (27),P-07,cable,standard,2.73,P-07 end-of-life
+232,SKU-0232,Cable for P-07 (28),P-07,cable,standard,5.25,P-07 end-of-life
+233,SKU-0233,Case for P-07 (29),P-07,case,standard,6.41,P-07 end-of-life
+234,SKU-0234,Cable for P-07 (30),P-07,cable,standard,3.91,P-07 end-of-life
+235,SKU-0235,Screen Protector for P-08 (01),P-08,screen protector,standard,1.8,Core
+236,SKU-0236,Cable for P-08 (02),P-08,cable,standard,5.64,Core
+237,SKU-0237,Charger for P-08 (03),P-08,charger,standard,8.77,Core
+238,SKU-0238,Charger for P-08 (04),P-08,charger,standard,8.44,Core
+239,SKU-0239,Car Mount for P-08 (05),P-08,car mount,standard,11.69,Core
+240,SKU-0240,Charger for P-08 (06),P-08,charger,standard,13.84,Core
+241,SKU-0241,Case for P-08 (07),P-08,case,standard,5.79,Core
+242,SKU-0242,Car Mount for P-08 (08),P-08,car mount,standard,9.23,Core
+243,SKU-0243,Case for P-08 (09),P-08,case,standard,4.01,Core
+244,SKU-0244,Screen Protector for P-08 (10),P-08,screen protector,standard,2.26,Core
+245,SKU-0245,Car Mount for P-08 (11),P-08,car mount,standard,11.76,Core
+246,SKU-0246,Cable for P-08 (12),P-08,cable,standard,3.51,Core
+247,SKU-0247,Screen Protector for P-08 (13),P-08,screen protector,standard,2.4,Core
+248,SKU-0248,Cable for P-08 (14),P-08,cable,standard,4.4,Core
+249,SKU-0249,Case for P-08 (15),P-08,case,standard,5.49,Core
+250,SKU-0250,Car Mount for P-08 (16),P-08,car mount,standard,11.88,Core
+251,SKU-0251,Car Mount for P-08 (17),P-08,car mount,standard,7.22,Core
+252,SKU-0252,Charger for P-08 (18),P-08,charger,standard,12.17,Core
+253,SKU-0253,Case for P-08 (19),P-08,case,standard,3.51,Core
+254,SKU-0254,Case for P-08 (20),P-08,case,standard,3.05,Core
+255,SKU-0255,Charger for P-08 (21),P-08,charger,standard,11.38,Core
+256,SKU-0256,Charger for P-08 (22),P-08,charger,standard,10.32,Core
+257,SKU-0257,Case for P-08 (23),P-08,case,standard,5.87,Core
+258,SKU-0258,Screen Protector for P-08 (24),P-08,screen protector,standard,2.26,Core
+259,SKU-0259,Case for P-08 (25),P-08,case,standard,6.96,Core
+260,SKU-0260,Car Mount for P-08 (26),P-08,car mount,standard,6.09,Core
+261,SKU-0261,Screen Protector for P-08 (27),P-08,screen protector,standard,2.39,Core
+262,SKU-0262,Cable for P-08 (28),P-08,cable,standard,5.32,Core
+263,SKU-0263,Charger for P-08 (29),P-08,charger,standard,11.43,Core
+264,SKU-0264,Charger for P-08 (30),P-08,charger,standard,8.91,Core
+265,SKU-0265,Case for P-08 (31),P-08,case,standard,6.97,Core
+266,SKU-0266,Screen Protector for P-08 (32),P-08,screen protector,standard,2.67,Core
+267,SKU-0267,Charger for P-08 (33),P-08,charger,standard,14.99,Core
+268,SKU-0268,Case for P-08 (34),P-08,case,standard,6.68,Core
+269,SKU-0269,Screen Protector for P-09 (01),P-09,screen protector,standard,2.9,P-09 end-of-life
+270,SKU-0270,Car Mount for P-09 (02),P-09,car mount,standard,9.63,P-09 end-of-life
+271,SKU-0271,Case for P-09 (03),P-09,case,standard,5.2,P-09 end-of-life
+272,SKU-0272,Screen Protector for P-09 (04),P-09,screen protector,standard,2.4,P-09 end-of-life
+273,SKU-0273,Screen Protector for P-09 (05),P-09,screen protector,standard,2.35,P-09 end-of-life
+274,SKU-0274,Car Mount for P-09 (06),P-09,car mount,standard,6.71,P-09 end-of-life
+275,SKU-0275,Case for P-09 (07),P-09,case,standard,6.11,P-09 end-of-life
+276,SKU-0276,Case for P-09 (08),P-09,case,standard,3.48,P-09 end-of-life
+277,SKU-0277,Case for P-09 (09),P-09,case,standard,5.05,P-09 end-of-life
+278,SKU-0278,Cable for P-09 (10),P-09,cable,standard,5.5,P-09 end-of-life
+279,SKU-0279,Car Mount for P-09 (11),P-09,car mount,standard,8.76,P-09 end-of-life
+280,SKU-0280,Cable for P-09 (12),P-09,cable,standard,4.54,P-09 end-of-life
+281,SKU-0281,Cable for P-09 (13),P-09,cable,standard,2.7,P-09 end-of-life
+282,SKU-0282,Case for P-09 (14),P-09,case,standard,4.3,P-09 end-of-life
+283,SKU-0283,Car Mount for P-09 (15),P-09,car mount,standard,6.08,P-09 end-of-life
+284,SKU-0284,Cable for P-09 (16),P-09,cable,standard,4.42,P-09 end-of-life
+285,SKU-0285,Charger for P-09 (17),P-09,charger,standard,10.32,P-09 end-of-life
+286,SKU-0286,Cable for P-09 (18),P-09,cable,standard,4.59,P-09 end-of-life
+287,SKU-0287,Screen Protector for P-09 (19),P-09,screen protector,standard,2.37,P-09 end-of-life
+288,SKU-0288,Screen Protector for P-09 (20),P-09,screen protector,standard,2.11,P-09 end-of-life
+289,SKU-0289,Cable for P-09 (21),P-09,cable,standard,4.15,P-09 end-of-life
+290,SKU-0290,Car Mount for P-09 (22),P-09,car mount,standard,7.69,P-09 end-of-life
+291,SKU-0291,Cable for P-09 (23),P-09,cable,standard,4.63,P-09 end-of-life
+292,SKU-0292,Cable for P-09 (24),P-09,cable,standard,2.73,P-09 end-of-life
+293,SKU-0293,Screen Protector for P-09 (25),P-09,screen protector,standard,1.69,P-09 end-of-life
+294,SKU-0294,Case for P-09 (26),P-09,case,standard,4.99,P-09 end-of-life
+295,SKU-0295,Charger for P-09 (27),P-09,charger,standard,15.32,P-09 end-of-life
+296,SKU-0296,Screen Protector for P-09 (28),P-09,screen protector,standard,2.24,P-09 end-of-life
+297,SKU-0297,Charger for P-09 (29),P-09,charger,standard,15.31,P-09 end-of-life
+298,SKU-0298,Charger for P-09 (30),P-09,charger,standard,10.56,P-09 end-of-life
+299,SKU-0299,Case for P-10 (01),P-10,case,standard,5.85,Core
+300,SKU-0300,Cable for P-10 (02),P-10,cable,standard,5.78,Core
+301,SKU-0301,Car Mount for P-10 (03),P-10,car mount,standard,10.58,Core
+302,SKU-0302,Car Mount for P-10 (04),P-10,car mount,standard,11.81,Core
+303,SKU-0303,Screen Protector for P-10 (05),P-10,screen protector,standard,1.65,Core
+304,SKU-0304,Screen Protector for P-10 (06),P-10,screen protector,standard,2.99,Core
+305,SKU-0305,Case for P-10 (07),P-10,case,standard,7.0,Core
+306,SKU-0306,Screen Protector for P-10 (08),P-10,screen protector,standard,1.69,Core
+307,SKU-0307,Cable for P-10 (09),P-10,cable,standard,4.59,Core
+308,SKU-0308,Case for P-10 (10),P-10,case,standard,3.37,Core
+309,SKU-0309,Charger for P-10 (11),P-10,charger,standard,12.93,Core
+310,SKU-0310,Cable for P-10 (12),P-10,cable,standard,2.93,Core
+311,SKU-0311,Case for P-10 (13),P-10,case,standard,4.64,Core
+312,SKU-0312,Car Mount for P-10 (14),P-10,car mount,standard,10.42,Core
+313,SKU-0313,Car Mount for P-10 (15),P-10,car mount,standard,6.1,Core
+314,SKU-0314,Screen Protector for P-10 (16),P-10,screen protector,standard,2.28,Core
+315,SKU-0315,Screen Protector for P-10 (17),P-10,screen protector,standard,2.57,Core
+316,SKU-0316,Screen Protector for P-10 (18),P-10,screen protector,standard,2.24,Core
+317,SKU-0317,Screen Protector for P-10 (19),P-10,screen protector,standard,1.94,Core
+318,SKU-0318,Screen Protector for P-10 (20),P-10,screen protector,standard,2.43,Core
+319,SKU-0319,Screen Protector for P-10 (21),P-10,screen protector,standard,2.48,Core
+320,SKU-0320,Car Mount for P-10 (22),P-10,car mount,standard,9.99,Core
+321,SKU-0321,Screen Protector for P-10 (23),P-10,screen protector,standard,2.56,Core
+322,SKU-0322,Charger for P-10 (24),P-10,charger,standard,9.61,Core
+323,SKU-0323,Charger for P-10 (25),P-10,charger,standard,10.57,Core
+324,SKU-0324,Charger for P-10 (26),P-10,charger,standard,12.61,Core
+325,SKU-0325,Cable for P-10 (27),P-10,cable,standard,4.12,Core
+326,SKU-0326,Case for P-10 (28),P-10,case,standard,5.17,Core
+327,SKU-0327,Case for P-10 (29),P-10,case,standard,6.09,Core
+328,SKU-0328,Screen Protector for P-10 (30),P-10,screen protector,standard,1.98,Core
+329,SKU-0329,Charger for P-10 (31),P-10,charger,standard,13.43,Core
+330,SKU-0330,Screen Protector for P-10 (32),P-10,screen protector,standard,2.41,Core
+331,SKU-0331,Screen Protector for P-10 (33),P-10,screen protector,standard,1.83,Core
+332,SKU-0332,Charger for P-10 (34),P-10,charger,standard,15.15,Core
+333,SKU-0333,Case for P-11 (01),P-11,case,standard,6.57,Core
+334,SKU-0334,Screen Protector for P-11 (02),P-11,screen protector,standard,1.68,Core
+335,SKU-0335,Car Mount for P-11 (03),P-11,car mount,standard,8.18,Core
+336,SKU-0336,Charger for P-11 (04),P-11,charger,standard,11.46,Core
+337,SKU-0337,Case for P-11 (05),P-11,case,standard,4.17,Core
+338,SKU-0338,Charger for P-11 (06),P-11,charger,standard,14.97,Core
+339,SKU-0339,Case for P-11 (07),P-11,case,standard,4.48,Core
+340,SKU-0340,Screen Protector for P-11 (08),P-11,screen protector,standard,2.09,Core
+341,SKU-0341,Cable for P-11 (09),P-11,cable,standard,3.32,Core
+342,SKU-0342,Screen Protector for P-11 (10),P-11,screen protector,standard,1.78,Core
+343,SKU-0343,Case for P-11 (11),P-11,case,standard,4.85,Core
+344,SKU-0344,Cable for P-11 (12),P-11,cable,standard,5.81,Core
+345,SKU-0345,Cable for P-11 (13),P-11,cable,standard,5.05,Core
+346,SKU-0346,Cable for P-11 (14),P-11,cable,standard,3.54,Core
+347,SKU-0347,Screen Protector for P-11 (15),P-11,screen protector,standard,1.73,Core
+348,SKU-0348,Screen Protector for P-11 (16),P-11,screen protector,standard,2.78,Core
+349,SKU-0349,Case for P-11 (17),P-11,case,standard,5.03,Core
+350,SKU-0350,Car Mount for P-11 (18),P-11,car mount,standard,6.52,Core
+351,SKU-0351,Cable for P-11 (19),P-11,cable,standard,4.04,Core
+352,SKU-0352,Case for P-11 (20),P-11,case,standard,4.23,Core
+353,SKU-0353,Case for P-11 (21),P-11,case,standard,6.76,Core
+354,SKU-0354,Cable for P-11 (22),P-11,cable,standard,4.76,Core
+355,SKU-0355,Case for P-11 (23),P-11,case,standard,4.4,Core
+356,SKU-0356,Charger for P-11 (24),P-11,charger,standard,15.93,Core
+357,SKU-0357,Case for P-11 (25),P-11,case,standard,3.16,Core
+358,SKU-0358,Case for P-11 (26),P-11,case,standard,3.41,Core
+359,SKU-0359,Cable for P-11 (27),P-11,cable,standard,3.4,Core
+360,SKU-0360,Charger for P-11 (28),P-11,charger,standard,11.66,Core
+361,SKU-0361,Case for P-11 (29),P-11,case,standard,4.98,Core
+362,SKU-0362,Case for P-11 (30),P-11,case,standard,3.99,Core
+363,SKU-0363,Charger for P-11 (31),P-11,charger,standard,10.53,Core
+364,SKU-0364,Case for P-11 (32),P-11,case,standard,4.69,Core
+365,SKU-0365,Screen Protector for P-11 (33),P-11,screen protector,standard,2.51,Core
+366,SKU-0366,Case for P-11 (34),P-11,case,standard,3.72,Core
+367,SKU-0367,Car Mount for P-12 (01),P-12,car mount,standard,10.1,Core
+368,SKU-0368,Cable for P-12 (02),P-12,cable,standard,5.74,Core
+369,SKU-0369,Charger for P-12 (03),P-12,charger,standard,14.91,Core
+370,SKU-0370,Case for P-12 (04),P-12,case,standard,3.55,Core
+371,SKU-0371,Case for P-12 (05),P-12,case,standard,4.46,Core
+372,SKU-0372,Case for P-12 (06),P-12,case,standard,4.61,Core
+373,SKU-0373,Case for P-12 (07),P-12,case,standard,6.86,Core
+374,SKU-0374,Charger for P-12 (08),P-12,charger,standard,8.65,Core
+375,SKU-0375,Case for P-12 (09),P-12,case,standard,4.66,Core
+376,SKU-0376,Cable for P-12 (10),P-12,cable,standard,2.57,Core
+377,SKU-0377,Screen Protector for P-12 (11),P-12,screen protector,standard,1.9,Core
+378,SKU-0378,Cable for P-12 (12),P-12,cable,standard,5.38,Core
+379,SKU-0379,Case for P-12 (13),P-12,case,standard,5.63,Core
+380,SKU-0380,Cable for P-12 (14),P-12,cable,standard,4.21,Core
+381,SKU-0381,Screen Protector for P-12 (15),P-12,screen protector,standard,2.0,Core
+382,SKU-0382,Case for P-12 (16),P-12,case,standard,3.66,Core
+383,SKU-0383,Car Mount for P-12 (17),P-12,car mount,standard,11.8,Core
+384,SKU-0384,Case for P-12 (18),P-12,case,standard,4.49,Core
+385,SKU-0385,Case for P-12 (19),P-12,case,standard,4.26,Core
+386,SKU-0386,Case for P-12 (20),P-12,case,standard,3.92,Core
+387,SKU-0387,Charger for P-12 (21),P-12,charger,standard,9.78,Core
+388,SKU-0388,Charger for P-12 (22),P-12,charger,standard,9.29,Core
+389,SKU-0389,Case for P-12 (23),P-12,case,standard,4.63,Core
+390,SKU-0390,Screen Protector for P-12 (24),P-12,screen protector,standard,2.0,Core
+391,SKU-0391,Case for P-12 (25),P-12,case,standard,6.18,Core
+392,SKU-0392,Cable for P-12 (26),P-12,cable,standard,5.13,Core
+393,SKU-0393,Cable for P-12 (27),P-12,cable,standard,3.05,Core
+394,SKU-0394,Case for P-12 (28),P-12,case,standard,3.48,Core
+395,SKU-0395,Cable for P-12 (29),P-12,cable,standard,5.21,Core
+396,SKU-0396,Cable for P-12 (30),P-12,cable,standard,2.63,Core
+397,SKU-0397,Case for P-12 (31),P-12,case,standard,5.16,Core
+398,SKU-0398,Charger for P-12 (32),P-12,charger,standard,13.49,Core
+399,SKU-0399,Cable for P-12 (33),P-12,cable,standard,2.74,Core
+400,SKU-0400,Case for P-12 (34),P-12,case,standard,4.74,Core

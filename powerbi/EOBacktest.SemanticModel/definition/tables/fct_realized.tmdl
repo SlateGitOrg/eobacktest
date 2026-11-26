@@ -1,0 +1,98 @@
+table fct_realized
+	lineageTag: 71252c0a-0ce8-534b-97b7-255d0d61f1ab
+
+	measure 'Realized E&O $' = SUM(fct_realized[realized_usd])
+		formatString: \$#,0
+		lineageTag: 71503630-347c-5b69-bb85-677b0021aecf
+
+	measure 'Months of Supply (Forecast)' = DIVIDE(SUM(fct_realized[on_hand_units]), SUM(fct_realized[forecast_12m_units]) / 12)
+		formatString: 0.0
+		lineageTag: 1276c0b3-2e43-52a2-a888-e092e3c4ee25
+
+	measure 'Months of Supply (Trailing)' = DIVIDE(SUM(fct_realized[on_hand_units]), SUM(fct_realized[trailing_avg_usage]))
+		formatString: 0.0
+		lineageTag: e0f42f6c-9bcd-59a3-96b9-dc22d3e6d050
+
+	column sku_key
+		dataType: int64
+		formatString: 0
+		lineageTag: 268726ac-f289-5c78-bfac-3d8789999a4d
+		summarizeBy: none
+		sourceColumn: sku_key
+
+	column date_key
+		dataType: int64
+		formatString: 0
+		lineageTag: d5f1dd24-0b3c-5f75-8f37-2036fc83504c
+		summarizeBy: none
+		sourceColumn: date_key
+
+	column on_hand_units
+		dataType: double
+		lineageTag: 98c6b872-72ed-53ad-8aa3-b58a3866c240
+		summarizeBy: sum
+		sourceColumn: on_hand_units
+
+	column unit_cost
+		dataType: double
+		lineageTag: 81e16239-9d08-5154-96a2-ff42580db099
+		summarizeBy: none
+		sourceColumn: unit_cost
+
+	column on_hand_usd
+		dataType: double
+		lineageTag: 2a4e59a9-ce9d-5a77-abdd-a1cecfd638c4
+		summarizeBy: sum
+		sourceColumn: on_hand_usd
+
+	column forecast_12m_units
+		dataType: double
+		lineageTag: 43fb8dfb-5cd0-5d07-86fe-420eb6ec38ff
+		summarizeBy: sum
+		sourceColumn: forecast_12m_units
+
+	column trailing_avg_usage
+		dataType: double
+		lineageTag: 29b8b599-4101-5cf4-846a-b925a092a4b4
+		summarizeBy: sum
+		sourceColumn: trailing_avg_usage
+
+	column days_since_movement
+		dataType: int64
+		formatString: 0
+		lineageTag: b81e6e4c-d78d-5edc-af00-848575ec5501
+		summarizeBy: none
+		sourceColumn: days_since_movement
+
+	column units_sold_next_12m
+		dataType: double
+		lineageTag: ee11f0db-6bc5-54e5-acda-9a65cbcd2df7
+		summarizeBy: sum
+		sourceColumn: units_sold_next_12m
+
+	column realized_units
+		dataType: double
+		lineageTag: 9cb1429a-7052-5ab6-bd6e-e0d64ed900f9
+		summarizeBy: sum
+		sourceColumn: realized_units
+
+	column realized_usd
+		dataType: double
+		lineageTag: 1ff01f5b-4396-524e-95e3-75f5e9de8121
+		summarizeBy: sum
+		sourceColumn: realized_usd
+
+	partition fct_realized = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(
+				        File.Contents(DataFolder & "\fct_realized.csv"),
+				        [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]
+				    ),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"sku_key", Int64.Type}, {"date_key", Int64.Type}, {"on_hand_units", type number}, {"unit_cost", type number}, {"on_hand_usd", type number}, {"forecast_12m_units", type number}, {"trailing_avg_usage", type number}, {"days_since_movement", Int64.Type}, {"units_sold_next_12m", type number}, {"realized_units", type number}, {"realized_usd", type number}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table

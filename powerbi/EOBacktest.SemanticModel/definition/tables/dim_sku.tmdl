@@ -1,0 +1,66 @@
+table dim_sku
+	lineageTag: 96fad263-2ff9-58f3-911d-ad1221ba2efb
+
+	column sku_key
+		dataType: int64
+		formatString: 0
+		lineageTag: 149b8683-85a2-51c1-a15d-c3936dfe6d67
+		summarizeBy: none
+		sourceColumn: sku_key
+
+	column sku_id
+		dataType: string
+		lineageTag: ca2c9785-216c-5dfe-b7b3-9f2e6062d768
+		summarizeBy: none
+		sourceColumn: sku_id
+
+	column name
+		dataType: string
+		lineageTag: 7e6f8128-a230-5adb-85e0-43878303270d
+		summarizeBy: none
+		sourceColumn: name
+
+	column phone_model
+		dataType: string
+		lineageTag: 57a3bede-dd77-5230-87ff-2fb38f6ac3ae
+		summarizeBy: none
+		sourceColumn: phone_model
+
+	column category
+		dataType: string
+		lineageTag: 927ad6e8-2edd-5a07-923e-765176a15331
+		summarizeBy: none
+		sourceColumn: category
+
+	column kind
+		dataType: string
+		lineageTag: 1b3ee070-2c56-50d4-897c-c57e882be590
+		summarizeBy: none
+		sourceColumn: kind
+
+	column unit_cost
+		dataType: double
+		lineageTag: 7911ccce-576c-565f-8e20-8da11af0a373
+		summarizeBy: none
+		sourceColumn: unit_cost
+
+	column cohort
+		dataType: string
+		lineageTag: ecbb1933-2897-5803-9056-673bb150baba
+		summarizeBy: none
+		sourceColumn: cohort
+
+	partition dim_sku = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(
+				        File.Contents(DataFolder & "\dim_sku.csv"),
+				        [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]
+				    ),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"sku_key", Int64.Type}, {"sku_id", type text}, {"name", type text}, {"phone_model", type text}, {"category", type text}, {"kind", type text}, {"unit_cost", type number}, {"cohort", type text}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table

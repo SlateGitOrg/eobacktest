@@ -1,0 +1,163 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.59\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Reserve Trend",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720,
+      "name": "ReportSection1",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"trend_policy\",\"layouts\":[{\"id\":0,\"position\":{\"x\":20,\"y\":20,\"z\":0,\"width\":200,\"height\":160}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"dim_policy.policy_code\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t0\",\"Entity\":\"dim_policy\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t0\"}},\"Property\":\"policy_code\"},\"Name\":\"dim_policy.policy_code\"}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Reserve policy'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 160,
+          "width": 200,
+          "x": 20,
+          "y": 20,
+          "z": 0
+        },
+        {
+          "config": "{\"name\":\"trend_reserve\",\"layouts\":[{\"id\":0,\"position\":{\"x\":240,\"y\":20,\"z\":0,\"width\":1020,\"height\":330}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"dim_date.quarter_label\"}],\"Series\":[{\"queryRef\":\"dim_policy.policy_code\"}],\"Y\":[{\"queryRef\":\"fct_reserve.Reserve $\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t0\",\"Entity\":\"dim_date\",\"Type\":0},{\"Name\":\"t1\",\"Entity\":\"dim_policy\",\"Type\":0},{\"Name\":\"t2\",\"Entity\":\"fct_reserve\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t0\"}},\"Property\":\"quarter_label\"},\"Name\":\"dim_date.quarter_label\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t1\"}},\"Property\":\"policy_code\"},\"Name\":\"dim_policy.policy_code\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t2\"}},\"Property\":\"Reserve $\"},\"Name\":\"fct_reserve.Reserve $\"}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Reserve by quarter-end and policy'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 330,
+          "width": 1020,
+          "x": 240,
+          "y": 20,
+          "z": 0
+        },
+        {
+          "config": "{\"name\":\"trend_realized\",\"layouts\":[{\"id\":0,\"position\":{\"x\":240,\"y\":370,\"z\":0,\"width\":640,\"height\":330}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"dim_date.quarter_label\"}],\"Y\":[{\"queryRef\":\"fct_realized.Realized E&O $\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t0\",\"Entity\":\"dim_date\",\"Type\":0},{\"Name\":\"t1\",\"Entity\":\"fct_realized\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t0\"}},\"Property\":\"quarter_label\"},\"Name\":\"dim_date.quarter_label\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t1\"}},\"Property\":\"Realized E&O $\"},\"Name\":\"fct_realized.Realized E&O $\"}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Realized E&O, stock unsold 12 months later'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 330,
+          "width": 640,
+          "x": 240,
+          "y": 370,
+          "z": 0
+        },
+        {
+          "config": "{\"name\":\"trend_supply\",\"layouts\":[{\"id\":0,\"position\":{\"x\":900,\"y\":370,\"z\":0,\"width\":360,\"height\":330}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"dim_date.quarter_label\"}],\"Y\":[{\"queryRef\":\"fct_realized.Months of Supply (Forecast)\"},{\"queryRef\":\"fct_realized.Months of Supply (Trailing)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t0\",\"Entity\":\"dim_date\",\"Type\":0},{\"Name\":\"t1\",\"Entity\":\"fct_realized\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t0\"}},\"Property\":\"quarter_label\"},\"Name\":\"dim_date.quarter_label\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t1\"}},\"Property\":\"Months of Supply (Forecast)\"},\"Name\":\"fct_realized.Months of Supply (Forecast)\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t1\"}},\"Property\":\"Months of Supply (Trailing)\"},\"Name\":\"fct_realized.Months of Supply (Trailing)\"}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Months of supply by quarter-end'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 330,
+          "width": 360,
+          "x": 900,
+          "y": 370,
+          "z": 0
+        }
+      ],
+      "width": 1280
+    },
+    {
+      "config": "{}",
+      "displayName": "Backtest Calibration",
+      "displayOption": 1,
+      "filters": "[{\"name\":\"scored_quarter_ends\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dim_date\"}},\"Property\":\"is_scored\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_date\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"is_scored\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"1L\"}}]]}}}]},\"type\":\"Categorical\"}]",
+      "height": 720,
+      "name": "ReportSection2",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"calibration_policy\",\"layouts\":[{\"id\":0,\"position\":{\"x\":20,\"y\":20,\"z\":0,\"width\":200,\"height\":160}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"dim_policy.policy_code\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t0\",\"Entity\":\"dim_policy\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t0\"}},\"Property\":\"policy_code\"},\"Name\":\"dim_policy.policy_code\"}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Reserve policy'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 160,
+          "width": 200,
+          "x": 20,
+          "y": 20,
+          "z": 0
+        },
+        {
+          "config": "{\"name\":\"calibration_coverage\",\"layouts\":[{\"id\":0,\"position\":{\"x\":240,\"y\":20,\"z\":0,\"width\":500,\"height\":330}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"dim_date.quarter_label\"}],\"Series\":[{\"queryRef\":\"dim_policy.policy_code\"}],\"Y\":[{\"queryRef\":\"fct_backtest.Coverage Ratio\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t0\",\"Entity\":\"dim_date\",\"Type\":0},{\"Name\":\"t1\",\"Entity\":\"dim_policy\",\"Type\":0},{\"Name\":\"t2\",\"Entity\":\"fct_backtest\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t0\"}},\"Property\":\"quarter_label\"},\"Name\":\"dim_date.quarter_label\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t1\"}},\"Property\":\"policy_code\"},\"Name\":\"dim_policy.policy_code\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t2\"}},\"Property\":\"Coverage Ratio\"},\"Name\":\"fct_backtest.Coverage Ratio\"}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Coverage ratio (reserve / realized)'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 330,
+          "width": 500,
+          "x": 240,
+          "y": 20,
+          "z": 0
+        },
+        {
+          "config": "{\"name\":\"calibration_under\",\"layouts\":[{\"id\":0,\"position\":{\"x\":760,\"y\":20,\"z\":0,\"width\":500,\"height\":330}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"dim_date.quarter_label\"}],\"Series\":[{\"queryRef\":\"dim_policy.policy_code\"}],\"Y\":[{\"queryRef\":\"fct_backtest.Under-reserve $\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t0\",\"Entity\":\"dim_date\",\"Type\":0},{\"Name\":\"t1\",\"Entity\":\"dim_policy\",\"Type\":0},{\"Name\":\"t2\",\"Entity\":\"fct_backtest\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t0\"}},\"Property\":\"quarter_label\"},\"Name\":\"dim_date.quarter_label\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t1\"}},\"Property\":\"policy_code\"},\"Name\":\"dim_policy.policy_code\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t2\"}},\"Property\":\"Under-reserve $\"},\"Name\":\"fct_backtest.Under-reserve $\"}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Under-reserve by quarter-end'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 330,
+          "width": 500,
+          "x": 760,
+          "y": 20,
+          "z": 0
+        },
+        {
+          "config": "{\"name\":\"calibration_table\",\"layouts\":[{\"id\":0,\"position\":{\"x\":240,\"y\":370,\"z\":0,\"width\":1020,\"height\":330}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"dim_policy.policy_code\"},{\"queryRef\":\"fct_reserve.Reserve $\"},{\"queryRef\":\"fct_realized.Realized E&O $\"},{\"queryRef\":\"fct_backtest.Coverage Ratio\"},{\"queryRef\":\"fct_backtest.Under-reserve $\"},{\"queryRef\":\"fct_backtest.Flag Precision\"},{\"queryRef\":\"fct_backtest.Flag Recall\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t0\",\"Entity\":\"dim_policy\",\"Type\":0},{\"Name\":\"t1\",\"Entity\":\"fct_reserve\",\"Type\":0},{\"Name\":\"t2\",\"Entity\":\"fct_realized\",\"Type\":0},{\"Name\":\"t3\",\"Entity\":\"fct_backtest\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t0\"}},\"Property\":\"policy_code\"},\"Name\":\"dim_policy.policy_code\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t1\"}},\"Property\":\"Reserve $\"},\"Name\":\"fct_reserve.Reserve $\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t2\"}},\"Property\":\"Realized E&O $\"},\"Name\":\"fct_realized.Realized E&O $\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t3\"}},\"Property\":\"Coverage Ratio\"},\"Name\":\"fct_backtest.Coverage Ratio\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t3\"}},\"Property\":\"Under-reserve $\"},\"Name\":\"fct_backtest.Under-reserve $\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t3\"}},\"Property\":\"Flag Precision\"},\"Name\":\"fct_backtest.Flag Precision\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t3\"}},\"Property\":\"Flag Recall\"},\"Name\":\"fct_backtest.Flag Recall\"}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Calibration by policy'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 330,
+          "width": 1020,
+          "x": 240,
+          "y": 370,
+          "z": 0
+        }
+      ],
+      "width": 1280
+    },
+    {
+      "config": "{}",
+      "displayName": "SKU Drill",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720,
+      "name": "ReportSection3",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"drill_policy\",\"layouts\":[{\"id\":0,\"position\":{\"x\":20,\"y\":20,\"z\":0,\"width\":200,\"height\":160}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"dim_policy.policy_code\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t0\",\"Entity\":\"dim_policy\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t0\"}},\"Property\":\"policy_code\"},\"Name\":\"dim_policy.policy_code\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"selection\":[{\"properties\":{\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_policy\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"policy_code\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'D'\"}}]]}}}]}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Reserve policy'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 160,
+          "width": 200,
+          "x": 20,
+          "y": 20,
+          "z": 0
+        },
+        {
+          "config": "{\"name\":\"drill_quarter\",\"layouts\":[{\"id\":0,\"position\":{\"x\":20,\"y\":420,\"z\":0,\"width\":200,\"height\":280}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"dim_date.quarter_label\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t0\",\"Entity\":\"dim_date\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t0\"}},\"Property\":\"quarter_label\"},\"Name\":\"dim_date.quarter_label\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"selection\":[{\"properties\":{\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_date\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"quarter_label\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'2024 Q4'\"}}]]}}}]}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Quarter-end'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 280,
+          "width": 200,
+          "x": 20,
+          "y": 420,
+          "z": 0
+        },
+        {
+          "config": "{\"name\":\"drill_cohort\",\"layouts\":[{\"id\":0,\"position\":{\"x\":20,\"y\":200,\"z\":0,\"width\":200,\"height\":200}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"dim_sku.cohort\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t0\",\"Entity\":\"dim_sku\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t0\"}},\"Property\":\"cohort\"},\"Name\":\"dim_sku.cohort\"}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Cohort'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 200,
+          "width": 200,
+          "x": 20,
+          "y": 200,
+          "z": 0
+        },
+        {
+          "config": "{\"name\":\"drill_table\",\"layouts\":[{\"id\":0,\"position\":{\"x\":240,\"y\":20,\"z\":0,\"width\":1020,\"height\":680}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"dim_sku.sku_id\"},{\"queryRef\":\"dim_sku.phone_model\"},{\"queryRef\":\"fct_reserve.Reserve $\"},{\"queryRef\":\"fct_realized.Realized E&O $\"},{\"queryRef\":\"fct_realized.Months of Supply (Forecast)\"},{\"queryRef\":\"fct_realized.Months of Supply (Trailing)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t0\",\"Entity\":\"dim_sku\",\"Type\":0},{\"Name\":\"t1\",\"Entity\":\"fct_reserve\",\"Type\":0},{\"Name\":\"t2\",\"Entity\":\"fct_realized\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t0\"}},\"Property\":\"sku_id\"},\"Name\":\"dim_sku.sku_id\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t0\"}},\"Property\":\"phone_model\"},\"Name\":\"dim_sku.phone_model\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t1\"}},\"Property\":\"Reserve $\"},\"Name\":\"fct_reserve.Reserve $\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t2\"}},\"Property\":\"Realized E&O $\"},\"Name\":\"fct_realized.Realized E&O $\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t2\"}},\"Property\":\"Months of Supply (Forecast)\"},\"Name\":\"fct_realized.Months of Supply (Forecast)\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t2\"}},\"Property\":\"Months of Supply (Trailing)\"},\"Name\":\"fct_realized.Months of Supply (Trailing)\"}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'SKU detail'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 680,
+          "width": 1020,
+          "x": 240,
+          "y": 20,
+          "z": 0
+        }
+      ],
+      "width": 1280
+    }
+  ]
+}

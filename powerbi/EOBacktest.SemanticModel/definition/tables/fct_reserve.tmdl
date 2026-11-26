@@ -1,0 +1,60 @@
+table fct_reserve
+	lineageTag: d3dc469e-18f5-5eb4-aa40-64b69bb40301
+
+	measure 'Reserve $' = SUM(fct_reserve[reserve_usd])
+		formatString: \$#,0
+		lineageTag: b762db66-aecf-56f4-8343-96c92906bdfc
+
+	column sku_key
+		dataType: int64
+		formatString: 0
+		lineageTag: dafe8356-618f-54ab-9039-fe6a9b487b66
+		summarizeBy: none
+		sourceColumn: sku_key
+
+	column date_key
+		dataType: int64
+		formatString: 0
+		lineageTag: 8c45caee-7935-54f6-ad8d-e24681a1425e
+		summarizeBy: none
+		sourceColumn: date_key
+
+	column policy_key
+		dataType: int64
+		formatString: 0
+		lineageTag: 39502b0d-116a-52db-9784-c17e57df5765
+		summarizeBy: none
+		sourceColumn: policy_key
+
+	column reserve_units
+		dataType: double
+		lineageTag: e2e38726-0d36-51bb-aa4c-eb2b65edce77
+		summarizeBy: sum
+		sourceColumn: reserve_units
+
+	column reserve_usd
+		dataType: double
+		lineageTag: 2645d229-4c72-50e2-807d-a5800ad6f05d
+		summarizeBy: sum
+		sourceColumn: reserve_usd
+
+	column under_reserve_usd
+		dataType: double
+		lineageTag: 4cf9deb5-4bad-5aa1-a0e0-697c23bee588
+		summarizeBy: sum
+		sourceColumn: under_reserve_usd
+
+	partition fct_reserve = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(
+				        File.Contents(DataFolder & "\fct_reserve.csv"),
+				        [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]
+				    ),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"sku_key", Int64.Type}, {"date_key", Int64.Type}, {"policy_key", Int64.Type}, {"reserve_units", type number}, {"reserve_usd", type number}, {"under_reserve_usd", type number}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table

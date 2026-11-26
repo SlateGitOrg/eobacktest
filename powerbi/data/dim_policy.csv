@@ -1,0 +1,5 @@
+policy_key,policy_code,policy_name,description
+1,A,Forecast coverage,"Units beyond the 12-month forecast of the version current at the snapshot, at 100%"
+2,B,Trailing usage,"Units beyond 12 x the trailing 6-month average usage, at 100% of cost"
+3,C,Aging,No movement for more than 180 days reserves 50%; more than 365 days reserves 100%
+4,D,Max of B and C,The larger of the Policy B and Policy C reserve dollars

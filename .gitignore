@@ -1,0 +1,16 @@
+/.venv/
+__pycache__/
+*.py[cod]
+/.pytest_cache/
+/.ruff_cache/
+/*.egg-info/
+/src/*.egg-info/
+/dist/
+/build/
+/data/
+/out/
+/.tmp/
+*.duckdb
+*.duckdb.wal
+/powerbi/.pbi/
+/powerbi/**/cache.abf

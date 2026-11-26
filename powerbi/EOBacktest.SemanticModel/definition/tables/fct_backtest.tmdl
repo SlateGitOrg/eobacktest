@@ -1,0 +1,93 @@
+table fct_backtest
+	lineageTag: 44cb4282-b78f-5d60-a003-20c49ccd9207
+
+	measure 'Coverage Ratio' = DIVIDE(SUM(fct_backtest[reserve_usd]), SUM(fct_backtest[realized_usd]))
+		formatString: 0.000
+		lineageTag: 33f593cd-0e78-50ad-8482-29a4bb06a346
+
+	measure 'Under-reserve $' = SUM(fct_backtest[under_reserve_usd])
+		formatString: \$#,0
+		lineageTag: d5500912-ecc8-5753-ad1c-e501ccb09b75
+
+	measure 'Flag Precision' = DIVIDE(SUM(fct_backtest[true_pos]), SUM(fct_backtest[true_pos]) + SUM(fct_backtest[false_pos]))
+		formatString: 0.0%
+		lineageTag: a51a5e40-869d-59f0-b86e-fe240cb46ca8
+
+	measure 'Flag Recall' = DIVIDE(SUM(fct_backtest[true_pos]), SUM(fct_backtest[true_pos]) + SUM(fct_backtest[false_neg]))
+		formatString: 0.0%
+		lineageTag: 4332f5ef-a55e-5cc4-a814-57d4eb160853
+
+	column policy_key
+		dataType: int64
+		formatString: 0
+		lineageTag: ccf81b2b-2758-5a41-9588-f615395882a4
+		summarizeBy: none
+		sourceColumn: policy_key
+
+	column date_key
+		dataType: int64
+		formatString: 0
+		lineageTag: 53a7124c-f2d4-517e-b1af-a9784f7d746f
+		summarizeBy: none
+		sourceColumn: date_key
+
+	column reserve_usd
+		dataType: double
+		lineageTag: c04d56db-f517-5ccf-9941-be3699ba35de
+		summarizeBy: sum
+		sourceColumn: reserve_usd
+
+	column realized_usd
+		dataType: double
+		lineageTag: 8097c855-0c82-54be-bb10-9e5a2b693578
+		summarizeBy: sum
+		sourceColumn: realized_usd
+
+	column under_reserve_usd
+		dataType: double
+		lineageTag: 3f49e357-51d7-53fc-91e1-aa7f893ec196
+		summarizeBy: sum
+		sourceColumn: under_reserve_usd
+
+	column true_pos
+		dataType: int64
+		formatString: 0
+		lineageTag: 8be35a82-6f0c-50b0-a299-d495fc021845
+		summarizeBy: sum
+		sourceColumn: true_pos
+
+	column false_pos
+		dataType: int64
+		formatString: 0
+		lineageTag: dfd23306-0079-59f5-b275-b62049bf3fcc
+		summarizeBy: sum
+		sourceColumn: false_pos
+
+	column false_neg
+		dataType: int64
+		formatString: 0
+		lineageTag: 501dcac8-f439-5f9c-9ad7-9c447c5b5d2e
+		summarizeBy: sum
+		sourceColumn: false_neg
+
+	column true_neg
+		dataType: int64
+		formatString: 0
+		lineageTag: 0459f5d3-cb09-58c9-b724-52482d81c1f6
+		summarizeBy: sum
+		sourceColumn: true_neg
+
+	partition fct_backtest = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(
+				        File.Contents(DataFolder & "\fct_backtest.csv"),
+				        [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]
+				    ),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"policy_key", Int64.Type}, {"date_key", Int64.Type}, {"reserve_usd", type number}, {"realized_usd", type number}, {"under_reserve_usd", type number}, {"true_pos", Int64.Type}, {"false_pos", Int64.Type}, {"false_neg", Int64.Type}, {"true_neg", Int64.Type}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table

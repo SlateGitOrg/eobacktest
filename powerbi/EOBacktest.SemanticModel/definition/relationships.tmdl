@@ -1,0 +1,27 @@
+relationship e5e0d57e-378b-5eb2-8de9-6ecc57ef6cd7
+	fromColumn: fct_reserve.sku_key
+	toColumn: dim_sku.sku_key
+
+relationship 68c093d3-dfa6-5685-a394-8f9aeb602aa6
+	fromColumn: fct_reserve.date_key
+	toColumn: dim_date.date_key
+
+relationship 150bbf58-3636-504e-a0ed-ab7ae2c65fe2
+	fromColumn: fct_reserve.policy_key
+	toColumn: dim_policy.policy_key
+
+relationship 28407f2f-b1be-5732-be06-df23bbd8f3a7
+	fromColumn: fct_realized.sku_key
+	toColumn: dim_sku.sku_key
+
+relationship 27357caf-b137-5809-8e78-c704c1b74998
+	fromColumn: fct_realized.date_key
+	toColumn: dim_date.date_key
+
+relationship e35fe591-a425-5551-93cd-be7fa45b76c9
+	fromColumn: fct_backtest.policy_key
+	toColumn: dim_policy.policy_key
+
+relationship ffa25d58-0d47-5b5b-b3d0-4bfabf0911b6
+	fromColumn: fct_backtest.date_key
+	toColumn: dim_date.date_key

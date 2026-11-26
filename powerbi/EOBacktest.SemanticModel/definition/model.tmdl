@@ -1,0 +1,12 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	discourageImplicitMeasures
+
+ref table dim_sku
+ref table dim_date
+ref table dim_policy
+ref table fct_reserve
+ref table fct_realized
+ref table fct_backtest
+ref expression DataFolder

@@ -1,0 +1,65 @@
+table dim_date
+	lineageTag: 97cacfd5-ff9f-5580-90c6-a71f5aef4cfd
+
+	column date_key
+		dataType: int64
+		formatString: 0
+		lineageTag: 07eea9c6-8551-5c4a-8dfd-b13cfdc9b9ad
+		summarizeBy: none
+		sourceColumn: date_key
+
+	column date
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		lineageTag: 5f004bf7-2d71-5e48-9d97-651ba70e2af2
+		summarizeBy: none
+		sourceColumn: date
+
+	column year
+		dataType: int64
+		formatString: 0
+		lineageTag: 5da5b53a-b76e-5d93-b4b4-b43b186d8bb6
+		summarizeBy: none
+		sourceColumn: year
+
+	column quarter_label
+		dataType: string
+		lineageTag: 01f02e05-ff34-53af-be35-6b87cc656e16
+		summarizeBy: none
+		sourceColumn: quarter_label
+
+	column month_number
+		dataType: int64
+		formatString: 0
+		lineageTag: eca9764e-81d2-5f3c-8af3-6a4089dec3a5
+		summarizeBy: none
+		sourceColumn: month_number
+
+	column is_quarter_end
+		dataType: int64
+		formatString: 0
+		lineageTag: 0c3a3b60-961b-5cc4-837b-1ecf46b667b7
+		summarizeBy: none
+		sourceColumn: is_quarter_end
+
+	column is_scored
+		dataType: int64
+		formatString: 0
+		lineageTag: 71b0cc08-2316-5369-9855-48f666cd05a7
+		summarizeBy: none
+		sourceColumn: is_scored
+
+	partition dim_date = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(
+				        File.Contents(DataFolder & "\dim_date.csv"),
+				        [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]
+				    ),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"date_key", Int64.Type}, {"date", type date}, {"year", Int64.Type}, {"quarter_label", type text}, {"month_number", Int64.Type}, {"is_quarter_end", Int64.Type}, {"is_scored", Int64.Type}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table
